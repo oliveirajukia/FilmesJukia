@@ -15,7 +15,7 @@
   --gunmetal-1: hsl(229, 15%, 21%);
   --gunmetal-2: hsl(216, 22%, 18%);
   --gainsboro: hsl(0, 7%, 88%);
-  --citrine: hsl(57, 97%, 45%);
+  --purple: hsl(263, 51%, 45%);
   --xiketic: hsl(253, 21%, 13%);
   --gray-x: hsl(0, 0%, 74%);
   --white: hsl(0, 100%, 100%);
@@ -87,4 +87,46 @@ body {
 
 body.active {
   overflow: hidden;
+}
+.container {
+  padding: 15px;
+}
+/*--------------------*/
+/* HEADER
+/*--------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: var(--transition-2);
+  z-index: 2;
+}
+
+.header:active {
+  background: var(--purple);
+  padding: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: none;
+}
+
+.btn-mobile {
+  font-size: 45px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: none;
 }
